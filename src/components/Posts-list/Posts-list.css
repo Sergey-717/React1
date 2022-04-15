@@ -50,3 +50,27 @@ margin-bottom: 16px;
   margin-left: 8px;
   padding: 0 6px;
 }
+
+.likes {
+  border: 1px solid rgb(87, 86, 84);
+  width: fit-content;
+  padding: 2px 6px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.likes._active {
+  border: 1px solid orange;
+
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.trash {
+  cursor: pointer;
+}
