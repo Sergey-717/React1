@@ -25,14 +25,14 @@ function PostsList() {
 
       if (!alredyLiked) {
         api.addLike(postId).then(() => 
-          api.getAllProducts().then(setPosts)
+          api.getAllProducts().then(posts => setPosts(posts.reverse()))
         )
 
         return;
       }
 
       api.removeLike(postId).then(() =>
-        api.getAllProducts().then(setPosts)
+        api.getAllProducts().then(posts => setPosts(posts.reverse()))
       )
   };
   
@@ -42,7 +42,7 @@ function PostsList() {
 
   const deletePost = (postId) => {
     api.deletePost(postId).then(() =>
-    api.getAllProducts().then(setPosts)
+    api.getAllProducts().then(posts => setPosts(posts.reverse()))
   )
   }
   
