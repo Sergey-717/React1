@@ -1,0 +1,16 @@
+.Header {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid black;
+  height: 64px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.Header__content {
+  width: 1024px;
+  display: flex;
+  justify-content: flex-end;
+
+}

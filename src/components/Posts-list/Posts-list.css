@@ -1,0 +1,51 @@
+.Posts-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 1024px;
+  max-width: 1024px;
+  flex: 1;
+  gap: 24px;
+}
+
+.post-card {
+  height: fit-content;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    min-width: 0;
+}
+
+.post-card__title {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.post-avatar {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  border-radius: 50%;
+
+}
+
+.avatar-mail {
+  display: flex;
+  align-items: center;
+
+}
+
+.tags {
+  display: flex;
+align-items: center;
+margin-bottom: 16px;
+}
+
+.tag {
+  border: 1px solid grey;
+  border-radius: 4px;
+  background-color: rgb(192, 189, 189);
+  margin-left: 8px;
+  padding: 0 6px;
+}
